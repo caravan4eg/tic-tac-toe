@@ -6,12 +6,15 @@ describe('TicTacToe', () => {
             let game;
 
             game = new TicTacToe();
+            //ok
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
             game.nextTurn(0, 1)
+            //ok
             expect(game.getCurrentPlayerSymbol()).to.equal('o')
 
             game.nextTurn(1, 2)
+            //ok
             expect(game.getCurrentPlayerSymbol()).to.equal('x')
 
             game.nextTurn(0, 2)
